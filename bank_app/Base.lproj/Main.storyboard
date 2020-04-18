@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bank_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="XVI-Gj-AsG" kind="presentation" identifier="move_one_one" id="fOY-OG-Mv8"/>
+                        <segue destination="9th-g7-aKl" kind="presentation" identifier="move_one" id="2gb-Go-sId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="114"/>
+        </scene>
+        <!--Registration Controller-->
+        <scene sceneID="MYC-Bd-eTN">
+            <objects>
+                <viewController id="XVI-Gj-AsG" customClass="RegistrationController" customModule="bank_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzT-jn-GRk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zB2-50-ciy"/>
+                    </view>
+                    <connections>
+                        <segue destination="IwV-7h-LKE" kind="presentation" identifier="move_two_two" modalPresentationStyle="fullScreen" id="0Ig-B3-gji"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkI-9a-SbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1449" y="-262"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pIs-q7-G2L">
+            <objects>
+                <navigationController id="IwV-7h-LKE" customClass="NavigationController" customModule="bank_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NAb-p3-XrJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sEn-QO-dU2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="k2F-cF-q0C" kind="relationship" relationship="rootViewController" id="Y9n-r6-Oow"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q20-AB-q6J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2473" y="101"/>
+        </scene>
+        <!--Enter Controller-->
+        <scene sceneID="etP-Mq-z3M">
+            <objects>
+                <viewController id="9th-g7-aKl" customClass="EnterController" customModule="bank_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EEt-aA-cTF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DZC-Za-xU3"/>
+                    </view>
+                    <connections>
+                        <segue destination="IwV-7h-LKE" kind="presentation" identifier="move_two" modalPresentationStyle="fullScreen" id="a8F-q7-GUF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zgc-m8-JR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="603"/>
+        </scene>
+        <!--Menu Controller-->
+        <scene sceneID="oG5-rK-Mz0">
+            <objects>
+                <viewController id="k2F-cF-q0C" customClass="MenuController" customModule="bank_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Djr-VC-P21">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="keU-I3-1fd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C2E-Kv-u5l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2d2-Vr-cgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3366" y="114"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0Ig-B3-gji"/>
+    </inferredMetricsTieBreakers>
+</document>
